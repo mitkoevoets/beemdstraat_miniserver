@@ -7,6 +7,12 @@
 2 Reboot Pi
 `sudo reboot`
 
-3 Start docker container
+3 Build docker container*
 
-`docker-compose up -h`
+`sudo docker-compose build`
+
+4 Start docker container*
+
+`sudo docker-compose up -h`
+
+*note: I had to use sudo with docker-compose for now, have to figure out this rights issue
