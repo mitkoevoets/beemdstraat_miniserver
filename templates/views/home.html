@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Hoi Hendrikus Johannes! :)</h3>
+                    <h1 class="display-2 display-2--light">Foto's naar chromecast sturen?</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content" style="margin-bottom: 50px">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{{ url_for('static', filename='images/zelfportret.jpg') }}"
+                                   class="thumb-link" title="The Beetle Car"
+                                   data-size="1050x700">
+                                    <img src="{{ url_for('static', filename='images/zelfportret.jpg') }}"
+                                         srcset="{{ url_for('static', filename='images/zelfportret.jpg') }} 1x, {{ url_for('static', filename='images/zelfportret.jpg') }} 2x"
+                                         alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Zelf
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Portret
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{{ url_for('static', filename='images/witte_molen.jpg') }}"
+                                   class="thumb-link" title="Palmeira"
+                                   data-size="1050x700">
+                                    <img src="{{ url_for('static', filename='images/witte_molen.jpg') }}"
+                                         alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Witte molen
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Deil
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{{ url_for('static', filename='images/wheat_grass_3.jpg') }}"
+                                   class="thumb-link" title="Palmeira"
+                                   data-size="1050x700">
+                                    <img src="{{ url_for('static', filename='images/wheat_grass_3.jpg') }}"
+                                         alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Tarwegras
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Macro fotografie
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{{ url_for('static', filename='images/eemshaven.jpg') }}"
+                                   class="thumb-link" title="Palmeira"
+                                   data-size="1050x700">
+                                    <img src="{{ url_for('static', filename='images/eemshaven.jpg') }}"
+                                         alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Eemshaven
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Windmolens
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}

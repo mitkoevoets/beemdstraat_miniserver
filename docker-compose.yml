@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "2233:2233"
+    volumes:
+      - .:/usr/src/app
+    container_name: beemdstraat_miniserver
+    environment:
+      GUNICORN_CMD_ARGS: "--reload"
+      FLASK_DEBUG: "True"
